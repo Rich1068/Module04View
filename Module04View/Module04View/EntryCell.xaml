@@ -1,12 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Module04View.EntryCell">
+             x:Class="Module04View.EntryCell" Title="ENTRY CELL PAGE">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="User Information">
+                        <EntryCell Label="Title"
+                                   Placeholder="Enter Title"
+                                   x:Name="Title"/>
+                        <EntryCell Label="Description"
+                                   Placeholder="Enter Description"
+                                   x:Name="Description"/>
+                        <EntryCell Label="Email"
+                                   Placeholder="Enter Your Email"
+                                   x:Name="email"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Submit" Clicked="OnSubmitEntry"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
