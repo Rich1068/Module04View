@@ -10,14 +10,14 @@ using Xamarin.Forms.Xaml;
 
 namespace Module04View
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SwitchCell : ContentPage
-    {
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class CollectionView : ContentPage
+	{
         ObservableCollection<Example> examples = new ObservableCollection<Example>();
         public ObservableCollection<Example> Examples { get { return examples; } }
-        public SwitchCell()
-        {
-            InitializeComponent();
+        public CollectionView ()
+		{
+			InitializeComponent ();
 
             ExampleView.ItemsSource = examples;
 
@@ -27,19 +27,5 @@ namespace Module04View
             examples.Add(new Example { Title = "Example 4", Description = "Description 4", Image = "https://64.media.tumblr.com/775c6e14d485eaf7509406c1595d864f/78b263366d7c367c-ef/s1280x1920/f5bb6df943143e347a2f5cb70c6d2822728c43e4.png" });
             examples.Add(new Example { Title = "Example 5", Description = "Description 5", Image = "https://64.media.tumblr.com/3bdfc7471d7f23ad4ecb1aee89751915/78b263366d7c367c-90/s1280x1920/a57e62ff54d4766f28e70590165f63678f5b14d8.png" });
         }
-        private void DisplayMsg(object sender, ToggledEventArgs e)
-        {
-            SwitchCell switchcell = (SwitchCell)sender;
-            bool isToggledOn = e.Value;
-
-            if (isToggledOn)
-            {
-                DisplayAlert("Switch Toggled On", "The sample switch is now ON!", "Ok");
-            }
-            else
-            {
-                DisplayAlert("Switch Toggled Off", "The sample switch is now OFF!", "Ok");
-            }
-        }
-    }
+	}
 }

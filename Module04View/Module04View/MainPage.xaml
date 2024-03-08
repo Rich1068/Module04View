@@ -18,9 +18,10 @@
             <Button Grid.Row="1" Text="ImageCell Page" BackgroundColor="SpringGreen" Clicked="Open_imagecell"/>
             <Button Grid.Column="1" Text="SwitchCell Page" BackgroundColor="Violet" Clicked="Open_switchcell"/>
             <Button Grid.Column="1" Grid.Row="1" Text="EntryCell Page" BackgroundColor="OrangeRed" Clicked="Open_entrycell"/>
-            
+            <Button Grid.Row="2" Text="CollectionView Page" BackgroundColor="CadetBlue" Clicked="Open_collectionview"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="Display Alert" BackgroundColor="DarkGray" Clicked="DisplayAlert"/>
         </Grid>
-        <Button Text="Display Alert" Clicked="DisplayAlert"/>
+
     </StackLayout>
 
 </ContentPage>

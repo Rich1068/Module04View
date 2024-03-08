@@ -9,7 +9,7 @@
                     <DataTemplate>
                         <SwitchCell Text="{Binding Title}"
                                     OnColor="Green"
-                                    OnChanged="displayMsg"/>
+                                    OnChanged="DisplayMsg"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

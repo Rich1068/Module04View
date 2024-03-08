@@ -30,6 +30,10 @@ namespace Module04View
         {
             await Navigation.PushAsync(new EntryCell());
         }
+        public async void Open_collectionview(Object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CollectionView());
+        }
         public void DisplayAlert(Object sender, EventArgs e)
         {
             DisplayAlert("Alertttt", "This is an Alert", "OK");
