@@ -29,7 +29,7 @@ namespace Module04View
         }
         private void DisplayMsg(object sender, ToggledEventArgs e)
         {
-            SwitchCell switchcell = (SwitchCell)sender;
+            //SwitchCell switchcell = (SwitchCell)sender; //Nagkaka error
             bool isToggledOn = e.Value;
 
             if (isToggledOn)
